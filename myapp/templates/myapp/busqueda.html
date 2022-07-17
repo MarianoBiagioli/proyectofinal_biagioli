@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+    {% extends 'myapp/base.html' %}
+    {% block content %}
 <body>
+    
+    <h1>BUSQUEDA DE FAMILIAR POR NOMBRE</h1>
 
-<h1>BUSQUEDA DE FAMILIAR POR NOMBRE</h1>
 
-
-<form action="" method="GET">
-    {{busqueda_formulario}}
-    <button type="submit">Buscar</button>
-</form>
+    <form action="" method="GET">
+        {{busqueda_formulario}}
+        <button type="submit">Buscar</button>
+    </form>
 
 
 
@@ -31,6 +33,6 @@
     {% endif %}
     </ul>
 
-
+    {% endblock %}
 </body>
 </html>
